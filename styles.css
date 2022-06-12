@@ -1,0 +1,31 @@
+html {
+    background: rgb(73,97,111);
+    background: linear-gradient(0deg, rgba(73,97,111,1) 0%, rgba(26,20,65,1) 52%, rgba(13,66,85,1) 100%); 
+}
+html, body {
+    margin: 0;
+    height: 100%;
+}
+.topnav {
+    background-color:  #183c54;
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #301616;
+    text-align: center;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(20, 16, 59);
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #0a1a4d;
+    color: white;
+  }
