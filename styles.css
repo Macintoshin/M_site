@@ -1,13 +1,13 @@
 html {
-    background: rgb(73,97,111);
-    background: linear-gradient(0deg, rgba(73,97,111,1) 0%, rgba(26,20,65,1) 52%, rgba(13,66,85,1) 100%); 
+  background: rgb(180,58,153);
+  background: linear-gradient(130deg, rgba(180,58,153,1) 0%, rgba(179,29,253,1) 62%, rgba(136,69,252,1) 100%); 
 }
 html, body {
     margin: 0;
     height: 100%;
 }
 .topnav {
-    background-color:  #183c54;
+    background-color:  #050607;
     overflow: hidden;
   }
   
@@ -21,11 +21,11 @@ html, body {
   }
   
   .topnav a:hover {
-    background-color: rgb(20, 16, 59);
+    background-color: #7700ff;
     color: black;
   }
   
   .topnav a.active {
-    background-color: #0a1a4d;
+    background-color: #183c54;
     color: white;
   }
