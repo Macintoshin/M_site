@@ -1,31 +1,84 @@
-html {
-  background: rgb(180,58,153);
-  background: linear-gradient(130deg, rgba(180,58,153,1) 0%, rgba(179,29,253,1) 62%, rgba(136,69,252,1) 100%); 
+/*Backgrounds.*/
+body {
+    background-image: url("Img/bg_tile.png");
+    background-repeat: repeat;
 }
+.topnav {
+  background-image: url("Img/Gradient_tile.png");
+  background-repeat: repeat;
+}
+.navbar {
+  background-image: url("Img/Gradient_tile_Flipped.png");
+  background-repeat: repeat;
+}
+
 html, body {
     margin: 0;
     height: 100%;
 }
+/*Top navigation bar*/
 .topnav {
     background-color:  #050607;
     overflow: hidden;
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
   }
   
   .topnav a {
-    float: left;
-    color: #301616;
+    display:inline-block;
+    text-align:center;
+    color: #ffffff;
     text-align: center;
-    padding: 8px 15px;
+    padding: 0px px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
   }
   
   .topnav a:hover {
-    background-color: #7700ff;
-    color: black;
+    background-image: url("Img/Gradient_tile_Flipped.png");
+    color: rgb(0, 174, 255);
   }
   
   .topnav a.active {
     background-color: #183c54;
     color: white;
   }
+  /*Bottom navigation bar*/
+  .navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .navbar a {
+    display:inline-block;
+    text-align:center;
+    color: #ffffff;
+    text-align: center;
+    padding: 0px px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .navbar a:hover {
+    background-image: url("Img/Gradient_tile.png");
+    
+  }
+  
+  .navbar a.active {
+    background-color: #183c54;
+    color: white;
+  }
+/*Center text*/
+.center-screen {
+  width: 500px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
