@@ -52,19 +52,16 @@ html, body {
     position: fixed;
     bottom: 0;
     width: 100%;
-  
   }
   .navbar a {
     display:inline-block;
     color: #ffffff;
-    padding: 0px px;
+    padding: 0px 0px;
     text-decoration: none;
-    font-size: 20px;
-    font-size: 20px;
+    font-size: 1px;
   }
   .navbar a:hover {
     background-image: url("Img/Gradient_tile.png");
-    
   }
   .navbar a.active {
     background-color: #183c54;
