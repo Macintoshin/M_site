@@ -1,0 +1,22 @@
+body {
+    background-image: url(/assets/catalina.png);
+    background-size:     cover;
+    background-position: center center;
+    margin:0
+}
+main {
+    margin: 0px 120px 0;
+    background-color:hsla(0, 0%, 0%, 0.5);
+    filter: blur(4px);
+    height: 100vh;
+}
+content {
+    position: absolute;
+    top: 10px;
+    left: 230px;
+    right: 230px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    font-size: 12px;
+    line-height: 20px;
+    color: #ffffff;
+}
