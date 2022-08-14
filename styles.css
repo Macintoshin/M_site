@@ -12,11 +12,23 @@ main {
 }
 content {
     position: absolute;
-    top: 10px;
+    top: 120px;
     left: 230px;
     right: 230px;
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
     font-size: 12px;
     line-height: 20px;
+    color: #ffffff;
+}
+nav {
+    background-color: hsla(0, 0%, 0%, 0.5);
+    border-radius: 8px;
+    position: absolute;
+    top: 10px;
+    left: 230px;
+    right: 230px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    font-size: 15px;
+    line-height: 12px;
     color: #ffffff;
 }
