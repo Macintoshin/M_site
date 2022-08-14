@@ -20,7 +20,7 @@ content {
     line-height: 20px;
     color: #ffffff;
 }
-nav {
+navbar {
     background-color: hsla(0, 0%, 0%, 0.5);
     border-radius: 8px;
     position: absolute;
