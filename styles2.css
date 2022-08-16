@@ -1,8 +1,5 @@
 body {
-    background-image: url(/assets/snow.png);
-    background-size:     cover;
-    background-repeat: no-repeat;
-    margin:0
+    background-image: url(/assets/fabric.png);
 }
 main {
     margin: 0px 120px 0;
