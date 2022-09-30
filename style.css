@@ -1,0 +1,253 @@
+/*Index.html & base style for everything else.*/
+html {
+    font-family: retro;
+    background-size: cover;
+}
+.Sites_bg {
+  background-image: url(img/Gradient6.png);
+}
+.Home_bg {
+  background-image: url(img/Gradient5.png);
+}
+.About_bg {
+  background-image: url(img/Gradient7.png);
+}
+@font-face {
+    font-family: retro;
+    src: url(fonts/slkscrb.ttf);
+}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+.header{
+    transition: all .2s ease-in-out;
+    font-size: 20px;
+    text-shadow: #000000;
+    color: white;
+    margin: 0;
+    background-image: url(img/Gradient.png);
+    background-size: cover;
+    box-shadow: 0px 8px 16px 0px #050303;
+    padding: 20px 30px;
+    border-radius: 5px;
+    margin:auto;
+  margin-left:1em;
+  margin-right:1em;
+  margin-top:1em;
+  margin-bottom:1em;
+ display:inline-block;
+ text-shadow: 0px 6px 8px #000000;
+}
+  .About{
+    font-size: 19px;
+    transition: all .2s ease-in-out;
+    text-shadow: #000000;
+    color: white;
+    margin: 0;
+    background-image: url(img/Gradient2.png);
+    background-size: cover;
+    box-shadow: 0px 8px 16px 0px #050303;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin:auto;
+  margin-left:1em;
+  margin-right:1em;
+  margin-top:1em;
+  margin-bottom:1em;
+ display:inline-block;
+ text-shadow: 0px 2px 8px #000000;
+
+  }
+  .Github{
+    font-size: 19px;
+    transition: all .2s ease-in-out;
+    text-shadow: #000000;
+    color: white;
+    margin: 0;
+    background-image: url(img/Gradient2.png);
+    background-size: cover;
+    box-shadow: 0px 8px 16px 0px #050303;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin:auto;
+  margin-left:1em;
+  margin-right:1em;
+  margin-top:1em;
+  margin-bottom:1em;
+ display:inline-block;
+ text-shadow: 0px 2px 8px #000000;
+  }
+  .Other{
+    font-size: 19px;
+    transition: all .2s ease-in-out;
+    text-shadow: #000000;
+    color: white;
+    margin: 0;
+    background-image: url(img/Gradient2.png);
+    background-size: cover;
+    box-shadow: 0px 8px 16px 0px #050303;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin:auto;
+  margin-left:1em;
+  margin-right:1em;
+  margin-top:1em;
+  margin-bottom:1em;
+ display:inline-block;
+ text-shadow: 0px 2px 8px #000000;
+  }
+  .mysites{
+    font-size: 19px;
+    transition: all .2s ease-in-out;
+    text-shadow: #000000;
+    color: white;
+    margin: 0;
+    background-image: url(img/Gradient2.png);
+    background-size: cover;
+    box-shadow: 0px 8px 16px 0px #050303;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin:auto;
+  margin-left:1em;
+  margin-right:1em;
+  margin-top:1em;
+  margin-bottom:1em;
+ display:inline-block;
+ text-shadow: 0px 2px 8px #000000;
+  }
+  .About:hover{
+    transform: scale(1.2);
+    font-size: 15px;
+    box-shadow: 0px 8px 16px 0px #0000006a;
+  }
+  .Github:hover{
+    transform: scale(1.2);
+    font-size: 15px;
+    box-shadow: 0px 8px 16px 0px #0000006a;
+  }
+  .Other:hover{
+    transform: scale(1.2);
+    font-size: 15px;
+    box-shadow: 0px 8px 16px 0px #0000006a;
+
+  }
+  .header:hover{
+    transform: scale(0.95);
+    box-shadow: 0px 0px 1px 0px #000000;
+    font-weight: 400;
+  }
+  .buttons{ 
+    text-align: center;      
+  }
+  body{
+    text-align: center;
+  }
+  .Github:active {
+    transform: scale(1.0);
+    animation-timing-function: linear;
+  }
+  .Other:active {
+    transform: scale(1.0);
+    animation-timing-function: linear;
+  }
+  .Github:active {
+    transform: scale(1.0);
+    animation-timing-function: linear;
+  }
+/*Sites.html*/
+.macintoshiml{
+  font-size: 19px;
+  transition: all .2s ease-in-out;
+  text-shadow: #000000;
+  color: white;
+  margin: 0;
+  background-image: url(img/macintoshi.ml.png);
+  background-size: cover;
+  box-shadow: 0px 8px 16px 0px #050303;
+  padding: 50px 30px;
+  border-radius: 5px;
+  margin:auto;
+margin-left:1em;
+margin-right:1em;
+margin-top:1em;
+margin-bottom:1em;
+display:inline-block;
+image-rendering: pixelated;
+text-shadow: 0px 2px 8px #000000;
+}
+.fnfftk{
+  font-size: 19px;
+  transition: all .2s ease-in-out;
+  text-shadow: #000000;
+  color: white;
+  margin: 0;
+  background-image: url(img/Fnffstk.png);
+  background-size: cover;
+  box-shadow: 0px 8px 16px 0px #050303;
+  padding: 50px 30px;
+  border-radius: 5px;
+  margin:auto;
+margin-left:1em;
+margin-right:1em;
+margin-top:1em;
+margin-bottom:1em;
+display:inline-block;
+image-rendering: pixelated;
+text-shadow: 0px 2px 8px #000000;
+}
+.praxorwtf{
+  font-size: 19px;
+  transition: all .2s ease-in-out;
+  text-shadow: #000000;
+  color: white;
+  margin: 0;
+  background-image: url(img/praxorwtf.png);
+  background-size: cover;
+  box-shadow: 0px 8px 16px 0px #050303;
+  padding: 50px 30px;
+  border-radius: 5px;
+  margin:auto;
+margin-left:1em;
+margin-right:1em;
+margin-top:1em;
+margin-bottom:1em;
+display:inline-block;
+image-rendering: pixelated;
+text-shadow: 0px 2px 8px #000000;
+}
+.macintoshiml:hover{
+  transform: scale(1.2);
+  font-size: 16px;
+  box-shadow: 0px 8px 16px 0px #0000006a;
+}
+.fnfftk:hover{
+  transform: scale(1.2);
+  font-size: 16px;
+  box-shadow: 0px 8px 16px 0px #0000006a;
+}
+.praxorwtf:hover{
+  transform: scale(1.2);
+  font-size: 16px;
+  box-shadow: 0px 8px 16px 0px #0000006a;
+}
+/*About.html*/
+.about{
+  font-size: 19px;
+  transition: all .2s ease-in-out;
+  text-shadow: #000000;
+  color: white;
+  margin: 0;
+  background-image: url(img/Gradient.png);
+  background-size: cover;
+  box-shadow: 0px 8px 16px 0px #050303;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin:auto;
+margin-left:1em;
+margin-right:1em;
+margin-top:1em;
+margin-bottom:1em;
+display:inline-block;
+text-shadow: 0px 2px 8px #000000;
+}
