@@ -1,3 +1,6 @@
+html{
+  background-color: black;
+}
 /*Index.html & base style for everything else.*/
 html {
     font-family: retro;
@@ -16,6 +19,10 @@ html {
     font-family: retro;
     src: url(fonts/slkscrb.ttf);
 }
+@font-face {
+      font-family: retrothin;
+      src: url(fonts/slkscre.ttf);
+}
 a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
@@ -28,18 +35,31 @@ a:active { text-decoration: none; }
     margin: 0;
     background-image: url(img/Gradient.png);
     background-size: cover;
-    box-shadow: 0px 8px 16px 0px #050303;
-    padding: 20px 30px;
+    box-shadow: 0px 4px 20px 0px #050303;
+    padding: 1.5px 30px;
     border-radius: 5px;
     margin:auto;
   margin-left:1em;
   margin-right:1em;
-  margin-top:1em;
+  margin: top 1em;
   margin-bottom:1em;
  display:inline-block;
  text-shadow: 0px 6px 8px #000000;
 }
+.footer{
+  position: fixed;  
+  left: 10px;  
+  bottom: 5px;  
+  right: 10px;   
+  width: 100%;  
+  background-color: gray;  
+  color: white;  
+  text-align: center;  
+  background-image: url(img/Gradient2.png);
+
+}
   .About{
+    position: relative;
     font-size: 19px;
     transition: all .2s ease-in-out;
     text-shadow: #000000;
@@ -51,15 +71,12 @@ a:active { text-decoration: none; }
     padding: 10px 30px;
     border-radius: 5px;
     margin:auto;
-  margin-left:1em;
-  margin-right:1em;
-  margin-top:1em;
-  margin-bottom:1em;
  display:inline-block;
  text-shadow: 0px 2px 8px #000000;
 
   }
   .Github{
+    position: relative;
     font-size: 19px;
     transition: all .2s ease-in-out;
     text-shadow: #000000;
@@ -71,14 +88,13 @@ a:active { text-decoration: none; }
     padding: 10px 30px;
     border-radius: 5px;
     margin:auto;
-  margin-left:1em;
-  margin-right:1em;
-  margin-top:1em;
-  margin-bottom:1em;
+  margin-left:2em;
+  margin-right:2em;
  display:inline-block;
  text-shadow: 0px 2px 8px #000000;
   }
   .Other{
+    position: relative;
     font-size: 19px;
     transition: all .2s ease-in-out;
     text-shadow: #000000;
@@ -90,10 +106,6 @@ a:active { text-decoration: none; }
     padding: 10px 30px;
     border-radius: 5px;
     margin:auto;
-  margin-left:1em;
-  margin-right:1em;
-  margin-top:1em;
-  margin-bottom:1em;
  display:inline-block;
  text-shadow: 0px 2px 8px #000000;
   }
@@ -117,19 +129,37 @@ a:active { text-decoration: none; }
  text-shadow: 0px 2px 8px #000000;
   }
   .About:hover{
+    position: relative;
+    margin-left:0em;
+    margin-right:0em;
+    padding: 13px 45px;
     transform: scale(1.2);
     font-size: 15px;
-    box-shadow: 0px 8px 16px 0px #0000006a;
+    box-shadow: 0px 6px 24px 5px #000000b5;
   }
   .Github:hover{
+    position: relative;
+    margin-left:5em;
+    margin-right:5em;
+    padding: 13px 45px;
     transform: scale(1.2);
     font-size: 15px;
-    box-shadow: 0px 8px 16px 0px #0000006a;
+    box-shadow: 0px 6px 24px 5px #000000b5;
+  }
+  .githubpreview {
+    display: none;
+  }
+  .Github:hover + .githubpreview {
+    display: block;
   }
   .Other:hover{
+    position: relative;
+    margin-left:0em;
+    margin-right:0em;
+    padding: 13px 45px;
     transform: scale(1.2);
     font-size: 15px;
-    box-shadow: 0px 8px 16px 0px #0000006a;
+    box-shadow: 0px 6px 24px 5px #000000b5;
 
   }
   .header:hover{
@@ -151,11 +181,13 @@ a:active { text-decoration: none; }
     transform: scale(1.0);
     animation-timing-function: linear;
   }
-  .Github:active {
+  .About:active {
     transform: scale(1.0);
     animation-timing-function: linear;
   }
+
 /*Sites.html*/
+
 .macintoshiml{
   font-size: 19px;
   transition: all .2s ease-in-out;
@@ -219,23 +251,26 @@ text-shadow: 0px 2px 8px #000000;
 .macintoshiml:hover{
   transform: scale(1.2);
   font-size: 16px;
-  box-shadow: 0px 8px 16px 0px #0000006a;
+  box-shadow: 0px 6px 24px 5px #000000b5;
 }
 .fnfftk:hover{
   transform: scale(1.2);
   font-size: 16px;
-  box-shadow: 0px 8px 16px 0px #0000006a;
+  box-shadow: 0px 6px 24px 5px #000000b5;
 }
 .praxorwtf:hover{
   transform: scale(1.2);
   font-size: 16px;
-  box-shadow: 0px 8px 16px 0px #0000006a;
+  box-shadow: 0px 6px 24px 5px #000000b5;
 }
+
 /*About.html*/
+
 .about{
+  letter-spacing: -3px;
+  font-family: retrothin;
   font-size: 19px;
   transition: all .2s ease-in-out;
-  text-shadow: #000000;
   color: white;
   margin: 0;
   background-image: url(img/Gradient.png);
@@ -249,5 +284,4 @@ margin-right:1em;
 margin-top:1em;
 margin-bottom:1em;
 display:inline-block;
-text-shadow: 0px 2px 8px #000000;
 }
