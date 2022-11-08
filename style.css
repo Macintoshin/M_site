@@ -1,287 +1,325 @@
-html{
-  background-color: black;
+  html {
+    margin: 0;
+    padding: 0;
+    font-family: AovelSans;
+      background: linear-gradient(351deg, rgba(145,79,137,1) 0%, rgba(122,47,136,1) 18%, rgba(67,5,105,1) 44%, rgba(18,14,74,1) 74%, rgba(0,38,68,1) 100%);
+	background-size: 900% 900%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
 }
-/*Index.html & base style for everything else.*/
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+a {
+    text-decoration: none;
+    color: white;
+  background: 
+    linear-gradient(to right, rgba(100, 200, 200, 0), rgba(100, 200, 200, 0)),
+    linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255,255,255,1), rgba(255,255,255,1));
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 600ms;
+}
+
+a:hover,
+a:focus {
+  background-size: 0 0.1em, 100% 0.1em;
+}
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+  }
+.button:hover > html {
+    background-position: 10% 10%;
+}
+@font-face {
+      font-family: AovelSans;
+      src: url(fonts/sans.ttf);
+}
 html {
-    font-family: retro;
-    background-size: cover;
+    background-color: black
 }
-.Sites_bg {
-  background-image: url(img/Gradient6.png);
+
+
+
+
+
+
+
+/*Title Button!!*/
+.button {
+    margin-top: 10vw;
+    aspect-ratio: 1.4/1;
+    border-style: solid;
+    border-color: #3933a6;
+    cursor: pointer;
+    position: relative;
+    width: 41vmin;
 }
-.Home_bg {
-  background-image: url(img/gradient5.png);
+.button:before {
+    background: rgb(0,0,0);
+    background: linear-gradient(172deg, rgba(0,0,0,1) 0%, rgba(31,55,88,1) 78%, rgba(57,51,166,1) 100%, transparent 100%);
+    display: flex;
+    height:100%;
+    width:100%;
+    background-position: 0% 0%;
+    background-size: 300% 300%;
+    content: "";
+    transition: background-position 1000ms ease, transform 1000ms ease, box-shadow 600ms ease;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    position: absolute;
+    box-shadow: 0px 0px 0px 0px ;
 }
-.About_bg {
-  background-image: url(img/Gradient7.png);
+.button:hover:before {
+    background-position: 100% 100%;
+    transform: scale(1.07,1.07);
+    box-shadow: 0px 0px 90px 0.1px ;
+    
 }
-@font-face {
-    font-family: retro;
-    src: url(fonts/slkscrb.ttf);
+.button-content {
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.2) 2.5%, 
+    transparent 8%
+  );
+  background-position: 0% 0%;
+  background-size: 5vmin 5vmin;
+  height: calc(100% - 10vmin);
+  padding: 5vmin;
+  position: relative;
+  transition: background-position 1000ms ease,transform 600ms ease;
+  width: calc(100% - 10vmin);
+  z-index: 2;
+    min-height: 1vw;
 }
-@font-face {
-      font-family: retrothin;
-      src: url(fonts/slkscre.ttf);
+.button:hover > .button-content{
+    background-position: -55% 44.4%;
+    transform: scale(1.07,1.07);
 }
-a:link { text-decoration: none; }
-a:visited { text-decoration: none; }
-a:hover { text-decoration: none; }
-a:active { text-decoration: none; }
-.header{
-    transition: all .2s ease-in-out;
-    font-size: 20px;
-    text-shadow: #000000;
+.button-content:hover > .button-title{
+}
+.button-content:hover > .button-text{
+    opacity: 100;
+    transition: opacity 600ms ease;
+}
+.button-title {
+    position:relative;
+    font-size: 1.9vw;
+    float: left;
     color: white;
-    margin: 0;
-    background-image: url(img/Gradient.png);
-    background-size: cover;
-    box-shadow: 0px 4px 20px 0px #050303;
-    padding: 1.5px 30px;
-    border-radius: 5px;
-    margin:auto;
-  margin-left:1em;
-  margin-right:1em;
-  margin: top 1em;
-  margin-bottom:1em;
- display:inline-block;
- text-shadow: 0px 6px 8px #000000;
+  z-index: 3;
 }
-.footer{
-  position: fixed;  
-  left: 10px;  
-  bottom: 5px;  
-  right: 10px;   
-  width: 100%;  
-  background-color: gray;  
-  color: white;  
-  text-align: center;  
-  background-image: url(img/Gradient2.png);
-
-}
-  .About{
-    position: relative;
-    font-size: 19px;
-    transition: all .2s ease-in-out;
-    text-shadow: #000000;
+.button-text {
+    overflow: hidden;
+    padding-top: 2vw;
+    position:relative;
+    letter-spacing: 0.1vw;
+    line-height: 2.6vw;
+    font-size: 1.3vw;
+    float: left;
     color: white;
-    margin: 0;
-    background-image: url(img/Gradient2.png);
-    background-size: cover;
-    box-shadow: 0px 8px 16px 0px #050303;
-    padding: 10px 30px;
-    border-radius: 5px;
-    margin:auto;
- display:inline-block;
- text-shadow: 0px 2px 8px #000000;
+    z-index: 2;
+    opacity: 0;
+}
 
-  }
-  .Github{
+
+
+
+
+/*Other site button*/
+.Sitesbutton {
+    float: left;
+    display: flex;
+    margin: 18vw;
+    margin-top: 2vw;
+    aspect-ratio: 1/1;
+    border-style: solid;
+    border-color: #6b0c0c;
+    cursor: pointer;
     position: relative;
-    font-size: 19px;
-    transition: all .2s ease-in-out;
-    text-shadow: #000000;
+    width: 20vmin;
+}
+.Sitesbutton:before {
+    background: rgb(0,0,0);
+    background: linear-gradient(150deg, rgba(7,2,17,1) 0%, rgba(60,11,23,1) 100%);
+    display: flex;
+    height:100%;
+    width:100%;
+    background-position: 0% 0%;
+    background-size: 300% 300%;
+    content: "";
+    transition: background-position 1000ms ease, transform 1000ms ease, box-shadow 600ms ease;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    position: absolute;
+    box-shadow: 0px 0px 0px 0px black ;
+}
+.Sitesbutton:hover:before {
+    background-position: 100% 100%;
+    transform: scale(1.07,1.07);
+    box-shadow: 0px 0px 90px 0.1px black ;
+    
+}
+.site-content {
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.2) 2.5%, 
+    transparent 8%
+  );
+  background-position: 0% 0%;
+  background-size: 5vmin 5vmin;
+  height: calc(120% - 10vmin);
+  padding: 3vmin;
+  position: relative;
+  transition: background-position 1000ms ease,transform 600ms ease;
+  width: calc(120% - 10vmin);
+  z-index: 2;
+    min-height: 1vw;
+}
+.Sitesbutton:hover > .site-content{
+    background-position: -55% 44.4%;
+    transform: scale(1.07,1.07);
+}
+.site-content:hover > .site-title{
+}
+.site-content:hover > .site-text{
+    opacity: 100;
+    transition: opacity 600ms ease;
+}
+.site-title {
+    position:relative;
+    font-size: 1.9vw;
+    float: left;
     color: white;
-    margin: 0;
-    background-image: url(img/Gradient2.png);
-    background-size: cover;
-    box-shadow: 0px 8px 16px 0px #050303;
-    padding: 10px 30px;
-    border-radius: 5px;
-    margin:auto;
-  margin-left:2em;
-  margin-right:2em;
- display:inline-block;
- text-shadow: 0px 2px 8px #000000;
-  }
-  .Other{
-    position: relative;
-    font-size: 19px;
-    transition: all .2s ease-in-out;
-    text-shadow: #000000;
+  z-index: 3;
+}
+.site-text {
+    float: left;
+    overflow: hidden;
+    padding-top: 1vw;
+    padding-right: 4vw;
+    position:relative;
+    letter-spacing: 0.1vw;
+    line-height: 1.6vw;
+    font-size: 1vw;
+    float: left;
     color: white;
-    margin: 0;
-    background-image: url(img/Gradient2.png);
-    background-size: cover;
-    box-shadow: 0px 8px 16px 0px #050303;
-    padding: 10px 30px;
-    border-radius: 5px;
-    margin:auto;
- display:inline-block;
- text-shadow: 0px 2px 8px #000000;
-  }
-  .mysites{
-    font-size: 19px;
-    transition: all .2s ease-in-out;
-    text-shadow: #000000;
+    z-index: 2;
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Social link*/
+.Socialbutton {
+    margin: 18vw;
+    margin-top: 2vw;
+    float: right;
+    display: flex;
+    margin-top: vw;
+    aspect-ratio: 1/1;
+    border-style: solid;
+    border-color: #0d6b0c;
+    cursor: pointer;
+    position: relative;
+    width: 20vmin;
+}
+.Socialbutton:before {
+    background: rgb(0,0,0);
+    background: linear-gradient(150deg, rgba(7,2,17,1) 0%, rgba(5,60,15,1) 100%);
+    display: flex;
+    height:100%;
+    width:100%;
+    background-position: 0% 0%;
+    background-size: 300% 300%;
+    content: "";
+    transition: background-position 1000ms ease, transform 1000ms ease, box-shadow 600ms ease;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    position: absolute;
+    box-shadow: 0px 0px 0px 0px black ;
+}
+.Socialbutton:hover:before {
+    background-position: 100% 100%;
+    transform: scale(1.07,1.07);
+    box-shadow: 0px 0px 90px 0.1px black ;
+    
+}
+.social-content {
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.2) 2.5%, 
+    transparent 8%
+  );
+  background-position: 0% 0%;
+  background-size: 5vmin 5vmin;
+  height: calc(120% - 10vmin);
+  padding: 3vmin;
+  position: relative;
+  transition: background-position 1000ms ease,transform 600ms ease;
+  width: calc(120% - 10vmin);
+  z-index: 2;
+    min-height: 1vw;
+}
+.Socialbutton:hover > .social-content{
+    background-position: -55% 44.4%;
+    transform: scale(1.07,1.07);
+}
+.social-content:hover > .social-title{
+}
+.social-content:hover > .social-text{
+    opacity: 100;
+    transition: opacity 600ms ease;
+}
+.social-title {
+    position:relative;
+    font-size: 1.9vw;
+    float: left;
     color: white;
-    margin: 0;
-    background-image: url(img/Gradient2.png);
-    background-size: cover;
-    box-shadow: 0px 8px 16px 0px #050303;
-    padding: 10px 30px;
-    border-radius: 5px;
-    margin:auto;
-  margin-left:1em;
-  margin-right:1em;
-  margin-top:1em;
-  margin-bottom:1em;
- display:inline-block;
- text-shadow: 0px 2px 8px #000000;
-  }
-  .About:hover{
-    position: relative;
-    margin-left:0em;
-    margin-right:0em;
-    padding: 13px 45px;
-    transform: scale(1.2);
-    font-size: 15px;
-    box-shadow: 0px 6px 24px 5px #000000b5;
-  }
-  .Github:hover{
-    position: relative;
-    margin-left:5em;
-    margin-right:5em;
-    padding: 13px 45px;
-    transform: scale(1.2);
-    font-size: 15px;
-    box-shadow: 0px 6px 24px 5px #000000b5;
-  }
-  .githubpreview {
-    display: none;
-  }
-  .Github:hover + .githubpreview {
-    display: block;
-  }
-  .Other:hover{
-    position: relative;
-    margin-left:0em;
-    margin-right:0em;
-    padding: 13px 45px;
-    transform: scale(1.2);
-    font-size: 15px;
-    box-shadow: 0px 6px 24px 5px #000000b5;
-
-  }
-  .header:hover{
-    transform: scale(0.95);
-    box-shadow: 0px 0px 1px 0px #000000;
-    font-weight: 400;
-  }
-  .buttons{ 
-    text-align: center;      
-  }
-  body{
-    text-align: center;
-  }
-  .Github:active {
-    transform: scale(1.0);
-    animation-timing-function: linear;
-  }
-  .Other:active {
-    transform: scale(1.0);
-    animation-timing-function: linear;
-  }
-  .About:active {
-    transform: scale(1.0);
-    animation-timing-function: linear;
-  }
-
-/*Sites.html*/
-
-.macintoshiml{
-  font-size: 19px;
-  transition: all .2s ease-in-out;
-  text-shadow: #000000;
-  color: white;
-  margin: 0;
-  background-image: url(img/macintoshi.ml.png);
-  background-size: cover;
-  box-shadow: 0px 8px 16px 0px #050303;
-  padding: 50px 30px;
-  border-radius: 5px;
-  margin:auto;
-margin-left:1em;
-margin-right:1em;
-margin-top:1em;
-margin-bottom:1em;
-display:inline-block;
-image-rendering: pixelated;
-text-shadow: 0px 2px 8px #000000;
+  z-index: 3;
 }
-.fnfftk{
-  font-size: 19px;
-  transition: all .2s ease-in-out;
-  text-shadow: #000000;
-  color: white;
-  margin: 0;
-  background-image: url(img/Fnffstk.png);
-  background-size: cover;
-  box-shadow: 0px 8px 16px 0px #050303;
-  padding: 50px 30px;
-  border-radius: 5px;
-  margin:auto;
-margin-left:1em;
-margin-right:1em;
-margin-top:1em;
-margin-bottom:1em;
-display:inline-block;
-image-rendering: pixelated;
-text-shadow: 0px 2px 8px #000000;
-}
-.praxorwtf{
-  font-size: 19px;
-  transition: all .2s ease-in-out;
-  text-shadow: #000000;
-  color: white;
-  margin: 0;
-  background-image: url(img/praxorwtf.png);
-  background-size: cover;
-  box-shadow: 0px 8px 16px 0px #050303;
-  padding: 50px 30px;
-  border-radius: 5px;
-  margin:auto;
-margin-left:1em;
-margin-right:1em;
-margin-top:1em;
-margin-bottom:1em;
-display:inline-block;
-image-rendering: pixelated;
-text-shadow: 0px 2px 8px #000000;
-}
-.macintoshiml:hover{
-  transform: scale(1.2);
-  font-size: 16px;
-  box-shadow: 0px 6px 24px 5px #000000b5;
-}
-.fnfftk:hover{
-  transform: scale(1.2);
-  font-size: 16px;
-  box-shadow: 0px 6px 24px 5px #000000b5;
-}
-.praxorwtf:hover{
-  transform: scale(1.2);
-  font-size: 16px;
-  box-shadow: 0px 6px 24px 5px #000000b5;
-}
-
-/*About.html*/
-
-.about{
-  letter-spacing: -3px;
-  font-family: retrothin;
-  font-size: 19px;
-  transition: all .2s ease-in-out;
-  color: white;
-  margin: 0;
-  background-image: url(img/Gradient.png);
-  background-size: cover;
-  box-shadow: 0px 8px 16px 0px #050303;
-  padding: 10px 30px;
-  border-radius: 5px;
-  margin:auto;
-margin-left:1em;
-margin-right:1em;
-margin-top:1em;
-margin-bottom:1em;
-display:inline-block;
+.social-text {
+    
+    overflow: hidden;
+    padding-top: 1vw;
+    padding-right: 4vw;
+    position:relative;
+    letter-spacing: 0.1vw;
+    line-height: 1.6vw;
+    font-size: 1vw;
+    float: left;
+    color: white;
+    z-index: 2;
+    opacity: 0;
 }
