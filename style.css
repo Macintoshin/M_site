@@ -1,64 +1,60 @@
-  html {
-    margin: 0;
-    padding: 0;
-    font-family: AovelSans;
-      background: linear-gradient(351deg, rgba(145,79,137,1) 0%, rgba(122,47,136,1) 18%, rgba(67,5,105,1) 44%, rgba(18,14,74,1) 74%, rgba(0,38,68,1) 100%);
-	background-size: 900% 900%;
-	animation: gradient 10s ease infinite;
-	height: 100vh;
+html {
+  margin: 0;
+  padding: 0;
+  font-family: AovelSans;
+    background: linear-gradient(351deg, rgba(145,79,137,1) 0%, rgba(122,47,136,1) 18%, rgba(67,5,105,1) 44%, rgba(18,14,74,1) 74%, rgba(0,38,68,1) 100%);
+background-size: 900% 900%;
+animation: gradient 5s ease infinite;
+height: 100vh;
 }
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+0% {
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
 }
 a {
-    text-decoration: none;
-    color: white;
-  background: 
-    linear-gradient(to right, rgba(100, 200, 200, 0), rgba(100, 200, 200, 0)),
-    linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255,255,255,1), rgba(255,255,255,1));
-  background-size: 100% 0.1em, 0 0.1em;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 600ms;
+  text-decoration: none;
+  color: white;
+background: 
+  linear-gradient(to right, rgba(100, 200, 200, 0), rgba(100, 200, 200, 0)),
+  linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255,255,255,1), rgba(255,255,255,1));
+background-size: 100% 0.1em, 0 0.1em;
+background-position: 100% 100%, 0 100%;
+background-repeat: no-repeat;
+transition: background-size 600ms;
 }
 
 a:hover,
 a:focus {
-  background-size: 0 0.1em, 100% 0.1em;
-}
+background-size: 0 0.1em, 100% 0.1em;
 }
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+0% {
+  background-position: 0% 50%;
 }
-
-  }
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
+}
 .button:hover > html {
-    background-position: 10% 10%;
+  background-position: 10% 10%;
 }
 @font-face {
-      font-family: AovelSans;
-      src: url(fonts/sans.ttf);
+    font-family: AovelSans;
+    src: url(fonts/sans.ttf);
 }
 html {
-    background-color: black
+  background-color: black
 }
-
 
 
 
@@ -67,80 +63,79 @@ html {
 
 /*Title Button!!*/
 .button {
-    margin-top: 10vw;
-    aspect-ratio: 1.4/1;
-    border-style: solid;
-    border-color: #3933a6;
-    cursor: pointer;
-    position: relative;
-    width: 41vmin;
+  margin-top: 10vmin;
+  aspect-ratio: 1.4/1;
+  border-style: solid;
+  border-color: #3933a6;
+  position: relative;
+  width: 41vmin;
 }
 .button:before {
-    background: rgb(0,0,0);
-    background: linear-gradient(172deg, rgba(0,0,0,1) 0%, rgba(31,55,88,1) 78%, rgba(57,51,166,1) 100%, transparent 100%);
-    display: flex;
-    height:100%;
-    width:100%;
-    background-position: 0% 0%;
-    background-size: 300% 300%;
-    content: "";
-    transition: background-position 1000ms ease, transform 1000ms ease, box-shadow 600ms ease;
-    z-index: 1;
-    top: 0px;
-    left: 0px;
-    pointer-events: none;
-    position: absolute;
-    box-shadow: 0px 0px 0px 0px ;
+  background: rgb(0,0,0);
+  background: linear-gradient(172deg, rgba(0,0,0,1) 0%, rgba(31,55,88,1) 78%, rgba(57,51,166,1) 100%, transparent 100%);
+  display: flex;
+  height:100%;
+  width:100%;
+  background-position: 0% 0%;
+  background-size: 300% 300%;
+  content: "";
+  transition: background-position 1000ms ease, transform 1000ms ease, box-shadow 600ms ease;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  position: absolute;
+  box-shadow: 0px 0px 0px 0px ;
 }
 .button:hover:before {
-    background-position: 100% 100%;
-    transform: scale(1.07,1.07);
-    box-shadow: 0px 0px 90px 0.1px ;
-    
+  background-position: 100% 100%;
+  transform: scale(1.07,1.07);
+  box-shadow: 0px 0px 10vmin 0.1vmin ;
+  
 }
 .button-content {
-  background-image: radial-gradient(
-    rgba(255, 255, 255, 0.2) 2.5%, 
-    transparent 8%
-  );
-  background-position: 0% 0%;
-  background-size: 5vmin 5vmin;
-  height: calc(100% - 10vmin);
-  padding: 5vmin;
-  position: relative;
-  transition: background-position 1000ms ease,transform 600ms ease;
-  width: calc(100% - 10vmin);
-  z-index: 2;
-    min-height: 1vw;
+background-image: radial-gradient(
+  rgba(255, 255, 255, 0.2) 2.5%, 
+  transparent 8%
+);
+background-position: 0% 0%;
+background-size: 5vmin 5vmin;
+height: calc(100% - 10vmin);
+padding: 5vmin;
+position: relative;
+transition: background-position 1000ms ease,transform 600ms ease;
+width: calc(100% - 10vmin);
+z-index: 2;
+  min-height: 1vw;
 }
 .button:hover > .button-content{
-    background-position: -55% 44.4%;
-    transform: scale(1.07,1.07);
+  background-position: -55% 44.4%;
+  transform: scale(1.07,1.07);
 }
 .button-content:hover > .button-title{
 }
 .button-content:hover > .button-text{
-    opacity: 100;
-    transition: opacity 600ms ease;
+  opacity: 100;
+  transition: opacity 600ms ease;
 }
 .button-title {
-    position:relative;
-    font-size: 1.9vw;
-    float: left;
-    color: white;
-  z-index: 3;
+  position:relative;
+  font-size: 3vmin;
+  float: left;
+  color: white;
+z-index: 3;
 }
 .button-text {
-    overflow: hidden;
-    padding-top: 2vw;
-    position:relative;
-    letter-spacing: 0.1vw;
-    line-height: 2.6vw;
-    font-size: 1.3vw;
-    float: left;
-    color: white;
-    z-index: 2;
-    opacity: 0;
+  overflow: hidden;
+  padding-top: 2vw;
+  position:relative;
+  letter-spacing: 0.1vw;
+  line-height: 2.6vw;
+  font-size: 2.4vmin;
+  float: left;
+  color: white;
+  z-index: 2;
+  opacity: 0;
 }
 
 
@@ -149,85 +144,83 @@ html {
 
 /*Other site button*/
 .Sitesbutton {
-    float: left;
-    display: flex;
-    margin: 18vw;
-    margin-top: 2vw;
-    aspect-ratio: 1/1;
-    border-style: solid;
-    border-color: #6b0c0c;
-    cursor: pointer;
-    position: relative;
-    width: 20vmin;
+  float: left;
+  display: flex;
+  margin-left: 15vmax;
+  margin-top: 4vmin;
+  aspect-ratio: 1/1;
+  border-style: solid;
+  border-color: #6b0c0c;
+  position: relative;
+  width: 20vmin;
 }
 .Sitesbutton:before {
-    background: rgb(0,0,0);
-    background: linear-gradient(150deg, rgba(7,2,17,1) 0%, rgba(60,11,23,1) 100%);
-    display: flex;
-    height:100%;
-    width:100%;
-    background-position: 0% 0%;
-    background-size: 300% 300%;
-    content: "";
-    transition: background-position 1000ms ease, transform 1000ms ease, box-shadow 600ms ease;
-    z-index: 1;
-    top: 0px;
-    left: 0px;
-    pointer-events: none;
-    position: absolute;
-    box-shadow: 0px 0px 0px 0px black ;
+  background: rgb(0,0,0);
+  background: linear-gradient(150deg, rgba(7,2,17,1) 0%, rgba(60,11,23,1) 100%);
+  display: flex;
+  height:100%;
+  width:100%;
+  background-position: 0% 0%;
+  background-size: 300% 300%;
+  content: "";
+  transition: background-position 1000ms ease, transform 1000ms ease, box-shadow 600ms ease;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  position: absolute;
+  box-shadow: 0px 0px 0px 0px black ;
 }
 .Sitesbutton:hover:before {
-    background-position: 100% 100%;
-    transform: scale(1.07,1.07);
-    box-shadow: 0px 0px 90px 0.1px black ;
-    
+  background-position: 100% 100%;
+  transform: scale(1.07,1.07);
+  box-shadow: 0px 0px 10vmin 0.1vmin ;
+  
 }
 .site-content {
-  background-image: radial-gradient(
-    rgba(255, 255, 255, 0.2) 2.5%, 
-    transparent 8%
-  );
-  background-position: 0% 0%;
-  background-size: 5vmin 5vmin;
-  height: calc(120% - 10vmin);
-  padding: 3vmin;
-  position: relative;
-  transition: background-position 1000ms ease,transform 600ms ease;
-  width: calc(120% - 10vmin);
-  z-index: 2;
-    min-height: 1vw;
+background-image: radial-gradient(
+  rgba(255, 255, 255, 0.2) 2.5%, 
+  transparent 8%
+);
+background-position: 0% 0%;
+background-size: 5vmin 5vmin;
+height: calc(120% - 10vmin);
+padding: 3vmin;
+position: relative;
+transition: background-position 1000ms ease,transform 600ms ease;
+width: calc(120% - 10vmin);
+z-index: 2;
+  min-height: 1vw;
 }
 .Sitesbutton:hover > .site-content{
-    background-position: -55% 44.4%;
-    transform: scale(1.07,1.07);
+  background-position: -55% 44.4%;
+  transform: scale(1.07,1.07);
 }
 .site-content:hover > .site-title{
 }
 .site-content:hover > .site-text{
-    opacity: 100;
-    transition: opacity 600ms ease;
+  opacity: 100;
+  transition: opacity 600ms ease;
 }
 .site-title {
-    position:relative;
-    font-size: 1.9vw;
-    float: left;
-    color: white;
-  z-index: 3;
+  position:relative;
+  font-size: 3vmin;
+  float: left;
+  color: white;
+z-index: 3;
 }
 .site-text {
-    float: left;
-    overflow: hidden;
-    padding-top: 1vw;
-    padding-right: 4vw;
-    position:relative;
-    letter-spacing: 0.1vw;
-    line-height: 1.6vw;
-    font-size: 1vw;
-    float: left;
-    color: white;
-    z-index: 2;
-    opacity: 0;
+  float: left;
+  overflow: hidden;
+  padding-top: 1vw;
+  position:relative;
+  letter-spacing: 0.2vmin;
+  line-height: 3vmin;
+  font-size: 2vmin;
+  float: left;
+  color: white;
+  z-index: 2;
+  opacity: 0;
 }
 
 
@@ -242,84 +235,81 @@ html {
 
 /*Social link*/
 .Socialbutton {
-    margin: 18vw;
-    margin-top: 2vw;
-    float: right;
-    display: flex;
-    margin-top: vw;
-    aspect-ratio: 1/1;
-    border-style: solid;
-    border-color: #0d6b0c;
-    cursor: pointer;
-    position: relative;
-    width: 20vmin;
+  margin-right: 15vmax;
+  margin-top: 4vmin;
+  float: right;
+  display: flex;
+  aspect-ratio: 1/1;
+  border-style: solid;
+  border-color: #0d6b0c;
+  position: relative;
+  width: 20vmin;
 }
 .Socialbutton:before {
-    background: rgb(0,0,0);
-    background: linear-gradient(150deg, rgba(7,2,17,1) 0%, rgba(5,60,15,1) 100%);
-    display: flex;
-    height:100%;
-    width:100%;
-    background-position: 0% 0%;
-    background-size: 300% 300%;
-    content: "";
-    transition: background-position 1000ms ease, transform 1000ms ease, box-shadow 600ms ease;
-    z-index: 1;
-    top: 0px;
-    left: 0px;
-    pointer-events: none;
-    position: absolute;
-    box-shadow: 0px 0px 0px 0px black ;
+  background: rgb(0,0,0);
+  background: linear-gradient(150deg, rgba(7,2,17,1) 0%, rgba(5,60,15,1) 100%);
+  display: flex;
+  height:100%;
+  width:100%;
+  background-position: 0% 0%;
+  background-size: 300% 300%;
+  content: "";
+  transition: background-position 1000ms ease, transform 1000ms ease, box-shadow 600ms ease;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  position: absolute;
+  box-shadow: 0px 0px 0px 0px black ;
 }
 .Socialbutton:hover:before {
-    background-position: 100% 100%;
-    transform: scale(1.07,1.07);
-    box-shadow: 0px 0px 90px 0.1px black ;
-    
+  background-position: 100% 100%;
+  transform: scale(1.07,1.07);
+  box-shadow: 0px 0px 10vmin 0.1vmin ;
+  
 }
 .social-content {
-  background-image: radial-gradient(
-    rgba(255, 255, 255, 0.2) 2.5%, 
-    transparent 8%
-  );
-  background-position: 0% 0%;
-  background-size: 5vmin 5vmin;
-  height: calc(120% - 10vmin);
-  padding: 3vmin;
-  position: relative;
-  transition: background-position 1000ms ease,transform 600ms ease;
-  width: calc(120% - 10vmin);
-  z-index: 2;
-    min-height: 1vw;
+background-image: radial-gradient(
+  rgba(255, 255, 255, 0.2) 2.5%, 
+  transparent 8%
+);
+background-position: 0% 0%;
+background-size: 5vmin 5vmin;
+height: calc(120% - 10vmin);
+padding: 3vmin;
+position: relative;
+transition: background-position 1000ms ease,transform 600ms ease;
+width: calc(120% - 10vmin);
+z-index: 2;
+  min-height: 1vw;
 }
 .Socialbutton:hover > .social-content{
-    background-position: -55% 44.4%;
-    transform: scale(1.07,1.07);
+  background-position: -55% 44.4%;
+  transform: scale(1.07,1.07);
 }
 .social-content:hover > .social-title{
 }
 .social-content:hover > .social-text{
-    opacity: 100;
-    transition: opacity 600ms ease;
+  opacity: 100;
+  transition: opacity 600ms ease;
 }
 .social-title {
-    position:relative;
-    font-size: 1.9vw;
-    float: left;
-    color: white;
-  z-index: 3;
+  position:relative;
+  font-size: 3vmin;
+  float: left;
+  color: white;
+z-index: 3;
 }
 .social-text {
-    
-    overflow: hidden;
-    padding-top: 1vw;
-    padding-right: 4vw;
-    position:relative;
-    letter-spacing: 0.1vw;
-    line-height: 1.6vw;
-    font-size: 1vw;
-    float: left;
-    color: white;
-    z-index: 2;
-    opacity: 0;
+  
+  overflow: hidden;
+  padding-top: 1vw;
+  position:relative;
+  letter-spacing: 0.2vmin;
+  line-height: 3vmin;
+  font-size: 2vmin;
+  float: left;
+  color: white;
+  z-index: 2;
+  opacity: 0;
 }
