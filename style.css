@@ -18,6 +18,15 @@ height: 100vh;
   background-position: 0% 50%;
 }
 }
+.column {
+width: 100%;
+}
+
+@media (min-width: 600px) {
+.column {
+  width: 50%;
+}
+}
 a {
   text-decoration: none;
   color: white;
@@ -65,10 +74,11 @@ html {
 .button {
   margin-top: 10vmin;
   aspect-ratio: 1.4/1;
-  border-style: solid;
-  border-color: #3933a6;
   position: relative;
   width: 41vmin;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 1.5px #3933a6;
+  box-sizing: border-box;
 }
 .button:before {
   background: rgb(0,0,0);
@@ -86,6 +96,7 @@ html {
   pointer-events: none;
   position: absolute;
   box-shadow: 0px 0px 0px 0px ;
+  border-radius: 10px;
 }
 .button:hover:before {
   background-position: 100% 100%;
@@ -96,7 +107,7 @@ html {
 .button-content {
 background-image: radial-gradient(
   rgba(255, 255, 255, 0.2) 2.5%, 
-  transparent 8%
+  transparent 5%
 );
 background-position: 0% 0%;
 background-size: 5vmin 5vmin;
@@ -111,6 +122,7 @@ z-index: 2;
 .button:hover > .button-content{
   background-position: -55% 44.4%;
   transform: scale(1.07,1.07);
+  border-radius: 10px;
 }
 .button-content:hover > .button-title{
 }
@@ -146,13 +158,14 @@ z-index: 3;
 .Sitesbutton {
   float: left;
   display: flex;
-  margin-left: 15vmax;
+  margin-left: 15vw;
   margin-top: 4vmin;
   aspect-ratio: 1/1;
-  border-style: solid;
-  border-color: #6b0c0c;
   position: relative;
   width: 20vmin;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 1.5px #6b0c0c;
+  box-sizing: border-box;
 }
 .Sitesbutton:before {
   background: rgb(0,0,0);
@@ -170,6 +183,7 @@ z-index: 3;
   pointer-events: none;
   position: absolute;
   box-shadow: 0px 0px 0px 0px black ;
+  border-radius: 10px;
 }
 .Sitesbutton:hover:before {
   background-position: 100% 100%;
@@ -180,7 +194,7 @@ z-index: 3;
 .site-content {
 background-image: radial-gradient(
   rgba(255, 255, 255, 0.2) 2.5%, 
-  transparent 8%
+  transparent 5%
 );
 background-position: 0% 0%;
 background-size: 5vmin 5vmin;
@@ -235,17 +249,20 @@ z-index: 3;
 
 /*Social link*/
 .Socialbutton {
-  margin-right: 15vmax;
+  margin-right: 15vw;
   margin-top: 4vmin;
   float: right;
   display: flex;
   aspect-ratio: 1/1;
-  border-style: solid;
-  border-color: #0d6b0c;
+
   position: relative;
   width: 20vmin;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 1.5px #0d6b0c;
+  box-sizing: border-box;
 }
 .Socialbutton:before {
+  border-radius: 10px;
   background: rgb(0,0,0);
   background: linear-gradient(150deg, rgba(7,2,17,1) 0%, rgba(5,60,15,1) 100%);
   display: flex;
@@ -271,7 +288,7 @@ z-index: 3;
 .social-content {
 background-image: radial-gradient(
   rgba(255, 255, 255, 0.2) 2.5%, 
-  transparent 8%
+  transparent 5%
 );
 background-position: 0% 0%;
 background-size: 5vmin 5vmin;
