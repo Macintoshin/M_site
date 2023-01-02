@@ -66,3 +66,9 @@ button {
 		padding-bottom: 6px;
     }
   }
+  footer {
+    background-color:;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
