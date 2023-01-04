@@ -1,0 +1,54 @@
+
+<title>Cube</title>
+<link rel="stylesheet" href="style.css">
+<html id="html">
+<div class="cubed">
+   <div class="cube">
+    <div class="face front">
+      <div id="text">
+        Macintoshing.tk<br><br>
+        Left Arrow - About<br>
+        Right Arrow - Sites<br>
+        Up Arrow - Socials<br>
+        Down Arrow - Source<br>
+        / - Main
+      </div>
+    </div>
+    <div class="face back"></div>
+    <div class="face right">
+      <div id="text">
+        Sites<br><br>
+        <a href="https://webfinder.ml">WebFinder</a><br>
+        <a href="https://macintoshin.github.io/Cube/">Cube</a><br>
+        <a href="https://macintoshi.ml">Macintoshi.ml</a>
+      </div>
+    </div>
+    <div class="face left" id="left">      <div id="text">
+      About<br><br>
+      Hello! I'm Macintoshing (easfrq)<br>
+      I'm learning how to code in CSS, HTML, and JS. I'm learning this along side my friend <a href="https://praxor.wtf">Praxor</a>
+    </div></div>
+    <div class="face top">
+      <div id="text">
+        Socials<br><br>
+        <a href="https://github.com/Macintoshin">Github</a><br>
+        <a href="https://open.spotify.com/user/rkn8mb00gra742i7qq35k0hng?si=6c886bd8aac94f92">Spotify</a><br>
+        <a href="https://music.apple.com/profile/Macintoshing">Apple Music</a><br>
+        <a href="https://twitter.com/Macintoshing_">Twitter</a><br>
+      </div>
+    </div>
+    <div class="face bottom" id="bottom">
+      <div id="text">
+        Source<br><br>
+        <a href="index.txt">HTML</a><br>
+        <a href="app.js">JavaScript</a><br>
+        <a href="style.css">StyleSheet</a>
+      </div>
+    </div>
+    <div class="body body"></div>
+    </div>
+  </div> 
+</div>
+</html>
+<script src="app.js"></script>
+<div id="policy"><a href="policy.html">Privacy & Policy</a></div>
