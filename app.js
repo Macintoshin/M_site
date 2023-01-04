@@ -2,19 +2,19 @@ const cube = document.querySelector('.cube');
 
 function rotateCube(event) {
   if (event.key === 'ArrowUp') {
-    cube.style.transform = 'rotateX(-90deg)';
+    cube.style.transform = 'rotateY(-5deg) rotateX(-85deg) rotateZ(10deg)';
     document.getElementById("bottom").style.boxShadow = "0px 0px 0px 0px black";
   } else if (event.key === 'ArrowDown') {
-    cube.style.transform = 'rotateX(90deg)';
+    cube.style.transform = 'rotateY(-10deg) rotateX(85deg) rotateZ(5deg)';
     document.getElementById("bottom").style.boxShadow = "0px 0px 0px 0px black";
   } else if (event.key === 'ArrowRight') {
-    cube.style.transform = 'rotateY(-90deg)';
+    cube.style.transform = 'rotateY(-85deg) rotateX(-5deg) rotateZ(2deg)';
     document.getElementById("bottom").style.boxShadow = "0px 0px 0px 0px black";
   } else if (event.key === 'ArrowLeft') {
-    cube.style.transform = 'rotateY(90deg)';
+    cube.style.transform = 'rotateY(85deg) rotateX(10deg) rotateZ(2deg)';
     document.getElementById("bottom").style.boxShadow = "0px 0px 0px 0px black";
-  } else if (event.key === '/') {
-    cube.style.transform = 'rotateY(0deg)';
+  } else if (event.key === 'm') {
+    cube.style.transform = 'rotateY(5deg) rotateZ(-1deg) rotateX(-1deg)';
     document.getElementById("bottom").style.boxShadow = "0px 0px 0px 0px black";
   } else if (event.key === 'e') {
     cube.style.transform = 'rotateY(180deg)';

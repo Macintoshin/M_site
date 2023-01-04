@@ -11,7 +11,7 @@
         Right Arrow - Sites<br>
         Up Arrow - Socials<br>
         Down Arrow - Source<br>
-        / - Main
+        m - Main
       </div>
     </div>
     <div class="face back"></div>
@@ -20,7 +20,8 @@
         Sites<br><br>
         <a href="https://webfinder.ml">WebFinder</a><br>
         <a href="https://macintoshin.github.io/Cube/">Cube</a><br>
-        <a href="https://macintoshi.ml">Macintoshi.ml</a>
+        <a href="https://macintoshi.ml">Macintoshi.ml</a><br>
+        <a href="https://fnffs.tk">fnffs.tk (depricated)</a>
       </div>
     </div>
     <div class="face left" id="left">      <div id="text">

@@ -1,7 +1,7 @@
 html,body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(201,201,201);
-    background-color: rgb(61,61,61);
+    background: radial-gradient(circle, rgba(88,88,88,1) 0%, rgba(43,43,43,1) 36%, rgba(0,0,0,1) 100%);
     transition: ease-in-out 300ms;
     padding: 0; margin: 0;
 }
@@ -13,11 +13,13 @@ html,body {
   transition: all 200ms;
 }
 .cube {
+  transform: rotateY(5deg) rotateZ(-1deg) rotateX(-1deg);
   width: 200px;
   height: 200px;
   transform-style: preserve-3d;
   transition: all 0.5s ease;
   transition: all 400ms;
+  animation-name: cube 20s linear infinite;
 }
 .face {
   position: absolute;
@@ -27,7 +29,7 @@ html,body {
 }
 .front {
   transform: rotateY(0deg) translateZ(100px);
-  background-color: rgb(41,41,41);
+  background: radial-gradient(circle, rgba(62,65,74,1) 0%, rgba(38,41,45,1) 100%);
   border: solid 1px white;
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,6 +38,7 @@ html,body {
 
 .back {
   transform: rotateY(180deg) translateZ(100px);
+
   background-color: rgb(41,41,41);
   border: solid 1px white;
   background-repeat: no-repeat;
@@ -45,7 +48,7 @@ html,body {
 
 .right {
   transform: rotateY(90deg) translateZ(100px);
-  background-color: rgb(41,41,81);
+  background: radial-gradient(circle, rgba(37,50,91,1) 0%, rgba(24,44,64,1) 100%);
   border: solid 1px white;
   background-repeat: no-repeat;
   background-size: cover;
@@ -54,7 +57,7 @@ html,body {
 
 .left {
   transform: rotateY(-90deg) translateZ(100px);
-  background-color: rgb(81,41,41);
+  background: radial-gradient(circle, rgba(91,37,37,1) 0%, rgba(64,24,24,1) 100%);
   border: solid 1px white;
   background-repeat: no-repeat;
   background-size: cover;
@@ -63,7 +66,7 @@ html,body {
 
 .top {
   transform: rotateX(90deg) translateZ(100px);
-  background-color: rgb(41,81,41);
+  background: radial-gradient(circle, rgba(47,91,37,1) 0%, rgba(32,64,24,1) 100%);
   border: solid 1px white;
   background-repeat: no-repeat;
   background-size: cover;
@@ -72,7 +75,7 @@ html,body {
 
 .bottom {
   transform: rotateX(-90deg) translateZ(100px);
-  background-color: rgb(81,81,41);
+  background: radial-gradient(circle, rgba(91,89,37,1) 0%, rgba(64,59,24,1) 100%);
   border: solid 1px white;
   background-repeat: no-repeat;
   background-size: cover;
@@ -88,8 +91,12 @@ a {
   text-decoration: underline;
 }
 #policy {
+  height: 17px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
   position: absolute;
-  bottom: 4px;
+  bottom: 0px;
   font-size: 10px;
   background-color: rgb(31,31,31);
   padding: 5px;
