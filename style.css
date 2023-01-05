@@ -1,9 +1,13 @@
 html,body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: rocko;
     color: rgb(201,201,201);
     background: radial-gradient(circle, rgba(88,88,88,1) 0%, rgba(43,43,43,1) 36%, rgba(0,0,0,1) 100%);
     transition: ease-in-out 300ms;
     padding: 0; margin: 0;
+}
+@font-face {
+  font-family: rocko;
+  src: url(rocko/RockoFLF.ttf);
 }
 .cubed {
   display: flex;
@@ -30,7 +34,6 @@ html,body {
 .front {
   transform: rotateY(0deg) translateZ(100px);
   background: radial-gradient(circle, rgba(62,65,74,1) 0%, rgba(38,41,45,1) 100%);
-  border: solid 1px white;
   background-repeat: no-repeat;
   background-size: cover;
   image-rendering: pixelated;
@@ -40,7 +43,6 @@ html,body {
   transform: rotateY(180deg) translateZ(100px);
 
   background-color: rgb(41,41,41);
-  border: solid 1px white;
   background-repeat: no-repeat;
   background-size: cover;
   image-rendering: pixelated;
@@ -49,7 +51,6 @@ html,body {
 .right {
   transform: rotateY(90deg) translateZ(100px);
   background: radial-gradient(circle, rgba(37,50,91,1) 0%, rgba(24,44,64,1) 100%);
-  border: solid 1px white;
   background-repeat: no-repeat;
   background-size: cover;
   image-rendering: pixelated;
@@ -58,7 +59,6 @@ html,body {
 .left {
   transform: rotateY(-90deg) translateZ(100px);
   background: radial-gradient(circle, rgba(91,37,37,1) 0%, rgba(64,24,24,1) 100%);
-  border: solid 1px white;
   background-repeat: no-repeat;
   background-size: cover;
   image-rendering: pixelated;
@@ -67,7 +67,6 @@ html,body {
 .top {
   transform: rotateX(90deg) translateZ(100px);
   background: radial-gradient(circle, rgba(47,91,37,1) 0%, rgba(32,64,24,1) 100%);
-  border: solid 1px white;
   background-repeat: no-repeat;
   background-size: cover;
   image-rendering: pixelated;
@@ -76,7 +75,6 @@ html,body {
 .bottom {
   transform: rotateX(-90deg) translateZ(100px);
   background: radial-gradient(circle, rgba(91,89,37,1) 0%, rgba(64,59,24,1) 100%);
-  border: solid 1px white;
   background-repeat: no-repeat;
   background-size: cover;
   image-rendering: pixelated;
@@ -84,7 +82,7 @@ html,body {
   transition: all 450ms;
 }
 #text {
-  margin: 6px;
+  margin: 12px;
 }
 a {
   color: rgba(255,255,255,65%);
