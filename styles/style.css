@@ -5,6 +5,13 @@ html,body {
   font-family: QuinqueFive;
   color: white;
 }
+#header {
+  color: rgb(38, 255, 0);
+  font-size: .6em;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
 @font-face {
   font-family: QuinqueFive;
   src: url(/fonts/QuinqueFive.ttf);
