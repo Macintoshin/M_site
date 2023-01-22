@@ -45,6 +45,8 @@ height: 250px;
   color: rgb(38, 255, 0);
   margin: 30px;
   font-size: .4em;
+  background-color: rgb(0, 0, 0);
+  max-width: 140px;
 }
 .front {
 transform: rotateY(0deg) translateZ(100px);
