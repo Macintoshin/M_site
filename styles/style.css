@@ -29,7 +29,7 @@ a {
 }
 .cube {
 width: 200px;
-height: 200px;
+height: 250px;
 transform-style: preserve-3d;
 transition: all 0.5s ease;
 transition: all 400ms;
@@ -39,11 +39,11 @@ animation: rotate 7000ms linear infinite;
 .face {
 position: absolute;
 width: 200px;
-height: 200px;
+height: 250px;
 }
 #content {
   color: rgb(38, 255, 0);
-  margin: 20px;
+  margin: 30px;
   font-size: .4em;
 }
 .front {
@@ -52,7 +52,7 @@ background-image: url(/Img/front.png);
 background-repeat: no-repeat;
 background-size: cover;
 image-rendering: pixelated;
-border: solid 1px white;
+border: solid 5px black;
 }
 
 .back {
@@ -62,7 +62,7 @@ background-image: url(/Img/back.png);
 background-repeat: no-repeat;
 background-size: cover;
 image-rendering: pixelated;
-border: solid 1px white;
+border: solid 5px black;
 
 }
 
@@ -73,7 +73,7 @@ background-image: url(/Img/sides.png);
 background-repeat: no-repeat;
 background-size: cover;
 image-rendering: pixelated;
-border: solid 1px white;
+border: solid 5px black;
 
 }
 .left {
@@ -83,7 +83,7 @@ background-image: url(/Img/sides.png);
 background-repeat: no-repeat;
 background-size: cover;
 image-rendering: pixelated;
-border: solid 1px white;
+border: solid 5px black;
 
 }
 
