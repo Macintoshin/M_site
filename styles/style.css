@@ -150,12 +150,12 @@ height: 200px;
   line-height: 2px;
   margin-left: 0px;
   margin-top: 1em;
-  -webkit-animation: blink 0.8s infinite;
+  animation: blink 0.8s infinite;
   width: 3px;
   height: 10px;
 }
 
-@-webkit-keyframes blink {
+@keyframes blink {
   0% {background: #222}
   50% {background: rgb(38, 255, 0)}
 }
